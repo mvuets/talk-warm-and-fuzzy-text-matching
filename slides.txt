@@ -1,0 +1,259 @@
+010.title.jpg
+
+-   hi. this is talk... my name... thanks...
+
+020.about.jpg
+
+-   ...
+
+030.agenda.jpg
+
+-   idea of the talk
+-   demo
+-   algorithms
+
+040.background.jpg
+
+-   like music, listen online
+-   ♥ some songs, result - playlist scattered
+-   last.fm - tsv
+-   messy plain text files
+-   overlaps, duplicates
+-   want - single canonical list
+-   problem: misspelled, different formats, non-structured.
+
+050.seek-and-destroy.jpg
+
+-   find & remove duplicates
+-   wrote a qirty script on a saturday morning
+-   amsterdamx.pm: 10 min talk?
+-   Stevan & Upasana: maybe 20 min?
+-   here i am
+
+060.ex1.jpg
+070.ex2.jpg
+080.ex3.jpg
+090.ex4.jpg
+100.ex5.jpg
+110.ex6.jpg
+120.ex7.jpg
+
+-   artist & song swapped
+-   cyrillic vs. latin
+-   typos
+-   punctuation marks
+-   letter case
+-   minor (alternative song names)
+
+130.ex8.jpg
+
+-   worst case, want it to be spotted automatically
+-   live demo
+-   ~100 dups removed
+-   what's fuzzy text matching?
+-   algs and techniques to find strings that match approximately
+
+140.typoglycemia.jpg
+
+-   it doesn't matter in what order the letters in a word are, the only
+    important thing is that the first and last letter be in the right
+    place. The rest can be a total mess and you can still read it
+    without a problem.
+
+150.on-intelligence.png
+
+-   by Jeff Hawkins
+-   human brains are great at pattern matching
+
+160.applications.jpg
+
+—   spell checker
+—   plagiarism detection
+—   bioinformatics: can be used to quantify the similarity of
+    macromolecules such as DNA, which can be viewed as strings of the
+    letters A, C, G and T.
+—   audio and image pattern recognition
+
+170.defenetly.png
+
+-   https://www.google.com/search?q=defenetly
+-   good spell checking
+
+180.perv.png
+
+-   https://twitter.com/mvuets/status/619422257753030656
+-   bad spell checking
+
+190.edit-distance.jpg
+
+200.lewis-carroll.jpg
+
+-   Alice's adventures in wonderland
+-   mathematician, logician, language lover
+
+210.word-ladder.jpg
+
+-   word ladder aka doublets - brain teaser
+-   changing one letter at a time, genuine words
+-   from hand to foot
+
+215.ed-illustrated.jpg
+
+-   similar to word ladder
+-   set of primitive operations:
+    insert, delete, substitute, transpose
+-   output: metric that denotes nr. of operations
+-   a way of quantifying how dissimilar two strings are to one another
+    by counting the minimum number of operations required to transform
+    one string into the other
+
+220.grid1.jpg
+230.grid2.jpg
+240.grid3.jpg
+250.grid4.jpg
+260.grid5.jpg
+
+-   move left to right, top to bottom
+-   take the minimum number from 3 adjecent cells;
+    add +1 if letters on the intersection mismatch
+-   resulting bottom right number is the edit distance
+
+270.horse-roses.jpg
+
+-   illustration of three types of opearations:
+    substitution, deletion, and insertion
+
+280.ed-algs.jpg
+
+-   most popular algorithm - levenshtein distance
+-   LCS - used in diff(1)
+-   others: differ in set of allowed operations
+    and their cost
+
+290.text-fuzzy.jpg
+
+-   Text::Fuzzy - partial or fuzzy string matching using edit distances
+
+300.bitap.jpg
+
+-   online alg - no index and pre-processing
+-   only pattern is processed
+
+310.agrep-code.png
+
+-   fuzzy grep
+
+320.bitap-code.png
+330.re-engine-tre.jpg
+
+-   fuzzy regex
+
+340.cos-sim.jpg
+
+-   matches long texts rather than short strings
+-   is a measure of similarity between two vectors
+
+350.cos.jpg
+
+-   vectors match - cos is 1
+-   as vectors diverge - cos converges to 0
+-   cosine similarity between two texts - similar idea
+
+360.vector.jpg
+
+-   vectors represent text in terms of features
+-   feature - measurable property
+
+370.ngram.jpg
+
+-   n-gram - simple and widely used feature
+-   n-gram is a contiguous sequence of n items
+    from a given sequence of text
+-   slicing a text into chunks of length n using a moving window
+-   n=1 - unigram
+    n=2 - bigram
+    n=3 - trigram
+
+380.anagram.jpg
+
+-   anagram - word play, rearrange letters of a word/phrase to produce a
+    new one; use original letters exactly once
+-   when two unigram vectors match - it's an anagram
+-   eg.: listen - silent
+
+390.cos-sim-illustrated.jpg
+
+-   take input, produces vector, calculate cosine similarity, get score
+
+400.cos-sim-code.png
+
+-   when only unigrams are used, 'listen' and 'silent' match perfectly
+-   when also bigrams are used, the similarity goes down to 0.2
+    (the "en" bigram is common)
+
+410.cos-sim-modules.jpg
+
+-   Data::CosineSimilarity - Compute the Cosine Similarity
+-   Text::Ngram - Ngram analysis of text
+
+420.phonetic-alg.jpg
+
+-   not a fuzzy text matching alg per se
+
+430.pizza.jpg
+
+-   "i'll never be your beast of burden" - guess the song
+-   play first 20 sec of "The Rolling Stones - Beast Of Burden"
+-   helps to find what sounds alike but is spelled different
+
+440.soundex-code.png
+
+-   soundex() - old popular american english function found in many
+    databases
+
+450.phonetic-illustrated.jpg
+
+-   like a hash or digest function
+
+460.billie.jpg
+
+-   soundex example
+-   1st letter is retained
+-   vowels dropped
+-   consonants mapped to digits
+-   rest: 0-padded or discarded
+
+470.phonetic-alg.jpg
+
+-   soundex - four-character strings composed of a single letter
+    followed by three numbers, American English
+-   Metaphone, Double Metaphone, and Metaphone 3 which are suitable for
+    use with most English words, not just names;
+    are the basis for many popular spell checkers
+-   Daitch–Mokotoff Soundex - soundex refinement for surnames of Slavic
+    and Germanic origin
+-   Kölner Phonetik - soundex for German words
+-   NYSIIS - New York State Identification and Intelligence System,
+    maps similar phonemes to the same letter; the result is a string
+    that can be pronounced by the reader without decoding
+-   Caverphone - created to assist in data matching between late 19th
+    century and early 20th century electoral rolls, optimized for
+    accents present in parts of New Zealand
+
+480.soundex.jpg
+
+-   Text::Soundex - Implementation of the soundex algorithm
+-   Text::Metaphone - A modern soundex. Phonetic encoding of words
+
+490.programming-collective-intelligence.jpg
+
+-   "Programming Collective Intelligence" by Toby Segaran -
+    more on the topic of text processing, clustering, matching
+
+500.beatles-stones.jpg
+
+-   tonight - an answer to the ultimate question
+
+510.beatles-stones-code.png
+
+-   eleven!

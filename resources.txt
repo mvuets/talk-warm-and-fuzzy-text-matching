@@ -1,0 +1,66 @@
+Fuzzy text matching:
+-   https://en.wikipedia.org/wiki/Approximate_string_matching
+-   https://en.wikipedia.org/wiki/Typoglycemia
+
+Edit distance:
+-   https://en.wikipedia.org/wiki/Lewis_Carroll
+-   https://en.wikipedia.org/wiki/Word_ladder
+-   https://en.wikipedia.org/wiki/Edit_distance
+-   https://en.wikipedia.org/wiki/Levenshtein_distance
+-   https://en.wikipedia.org/wiki/Dynamic_programming
+-   https://en.wikipedia.org/wiki/Longest_common_subsequence_problem
+-   https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance
+-   https://en.wikipedia.org/wiki/Hamming_distance
+-   https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance
+-   https://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm
+-   https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm
+-   https://en.wikipedia.org/wiki/Wagner%E2%80%93Fischer_algorithm
+-   https://metacpan.org/pod/Text::Fuzzy
+
+Bitap:
+-   https://en.wikipedia.org/wiki/Bitap_algorithm
+-   https://metacpan.org/pod/re::engine::TRE
+-   https://metacpan.org/pod/String::Approx
+
+Cosine similarity:
+-   https://en.wikipedia.org/wiki/N-gram#n-grams_for_approximate_matching
+-   https://metacpan.org/pod/Data::CosineSimilarity
+-   https://metacpan.org/pod/Text::Ngram
+
+Phonetic algorithm:
+
+-   perldoc -q soundex
+-   https://en.wikipedia.org/wiki/Phonetic_algorithm
+-   https://en.wikipedia.org/wiki/Soundex
+-   https://metacpan.org/pod/Text::Soundex
+-   https://metacpan.org/pod/Text::Metaphone
+-   https://metacpan.org/pod/Text::DoubleMetaphone
+-   https://metacpan.org/release/Text-Phonetic
+
+Further reading:
+-   String Matching and its Applications in Diversified Fields
+    http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.402.6234&rep=rep1&type=pdf
+-   http://blog.gopheracademy.com/advent-2014/string-matching/
+-   http://hadjieleftheriou.com/papers/FnT_HS11.pdf
+-   http://www-igm.univ-mlv.fr/~mac/REC/text-algorithms.pdf
+-   http://nlp.stanford.edu/IR-book/pdf/irbookonlinereading.pdf
+-   https://swtch.com/~rsc/regexp/regexp4.html
+-   https://github.com/dgryski/go-trigram
+-   http://arxiv.org/abs/1507.02989
+-   "Programming Collective Intelligence. Building Smart Web 2.0 Applications" By Toby Segaran
+    http://shop.oreilly.com/product/9780596529321.do
+-   http://www.akira.ruc.dk/~keld/teaching/algoritmedesign_f08/Artikler/09/Baeza92.pdf
+-   http://www.cod5.org/archive/l/libbitap.html
+-   http://www.wucathy.com/blog/?p=680
+-   http://stackoverflow.com/questions/11317973/string-similarity-how-exactly-does-bitap-work
+-   http://www.tomsquest.com/blog/2011/05/better-autocompletes-with-fuzzy-matching/
+-   https://github.com/laurikari/tre/
+-   http://ntz-develop.blogspot.nl/2011/03/fuzzy-string-search.html
+-   http://www.let.rug.nl/~kleiweg/lev/
+-   http://dingo.sbs.arizona.edu/~mhulden/hulden_sepln_2009.pdf
+-   http://www.cis.uni-muenchen.de/people/Schulz/Pub/aspaperCISreport.pdf
+-   http://www.sciencedirect.com/science/article/pii/S0019995885800462
+-   https://www.cs.helsinki.fi/u/ukkonen/JAlg.pdf
+-   https://en.wikipedia.org/wiki/MinHash
+-   https://metacpan.org/pod/Text::SpeedyFx
+-   http://chokkan.org/software/simstring/
