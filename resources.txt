@@ -26,6 +26,7 @@ Cosine similarity:
 -   https://en.wikipedia.org/wiki/N-gram#n-grams_for_approximate_matching
 -   https://metacpan.org/pod/Data::CosineSimilarity
 -   https://metacpan.org/pod/Text::Ngram
+-   http://blog.nishtahir.com/2015/09/19/fuzzy-string-matching-using-cosine-similarity/
 
 Phonetic algorithm:
 
